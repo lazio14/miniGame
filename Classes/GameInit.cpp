@@ -12,7 +12,7 @@ USING_NS_CC;
 
 GameInit::GameInit()
 {
-    
+    loadTipTextXML();
 }
 
 GameInit::~GameInit()
@@ -23,4 +23,9 @@ GameInit::~GameInit()
 void GameInit::beginGame()
 {
     Director::getInstance()->runWithScene(HelloWorld::createScene());
+}
+
+void GameInit::loadTipTextXML()
+{
+    
 }

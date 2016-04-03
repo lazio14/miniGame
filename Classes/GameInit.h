@@ -16,6 +16,7 @@ public:
     GameInit();
     virtual ~GameInit();
     void beginGame();
+    void loadTipTextXML();
     
 public:
     
