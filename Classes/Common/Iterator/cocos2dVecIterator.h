@@ -16,7 +16,7 @@ template <class T>
 class cocos2dVecIterator : public Iterator<T>
 {
 public:
-    cocos2dVecIterator<T>()
+    cocos2dVecIterator<T>(cocos2d::Vector<T>* alist) : _list(alist)
     {
         
     }

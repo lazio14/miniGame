@@ -17,6 +17,8 @@ public:
     virtual void next() = 0;
     virtual bool isDone() const = 0;
     virtual T currentItem() const = 0;
+
+    virtual ~Iterator() {}
 };
 
 #endif

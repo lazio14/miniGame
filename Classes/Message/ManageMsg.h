@@ -20,13 +20,14 @@ public:
     virtual ~ManageMsg();
     void appendMsg(int msgId, unsigned int exData);
     void removeAllMsg();
-    Iterator<Msg*> createItertor();
+    Iterator<Msg*>* createItertor();
     
 private:
     ManageMsg();
     
 public:
     cocos2d::Vector<Msg*> m_msglist;
+    Iterator<Msg*>* m_iter;
 };
 
 #endif /* defined(__miniGame__ManageMsg__) */

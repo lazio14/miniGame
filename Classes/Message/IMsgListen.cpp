@@ -19,8 +19,3 @@ IMsgListen::~IMsgListen()
 {
     MsgDispatcher::getInstance()->removeMsgListener(this);
 }
-
-bool IMsgListen::excuteMsg()
-{
-    return true;
-}

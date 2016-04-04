@@ -7,6 +7,7 @@
 //
 
 #include "MsgDispatcher.h"
+#include "ManageMsg.h"
 
 MsgDispatcher* MsgDispatcher::getInstance()
 {
@@ -26,7 +27,26 @@ MsgDispatcher::~MsgDispatcher()
 
 void MsgDispatcher::dispatchMsg()
 {
+    Iterator<Msg*>* msgIter = ManageMsg::getInstance()->createItertor();
+    for (msgIter->first(); !msgIter->isDone(); msgIter->next())
+    {
+        auto msg = msgIter->currentItem();
+        if(msg == NULL)
+        {
+            continue;
+        }
+        
+        for (auto iter = m_msgListenerVec.rbegin(); iter != m_msgListenerVec.rend(); ++iter)
+        {
+            auto listener = (*iter);
+            if (listener)
+            {
+                listener->excuteMsg(msg);
+            }
+        }
+    }
     
+    ManageMsg::getInstance()->removeAllMsg();
 }
 
 void MsgDispatcher::addMsgListener(IMsgListen* listener)

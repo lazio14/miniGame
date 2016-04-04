@@ -10,15 +10,16 @@
 #define miniGame_GameInit_h
 
 #include "cocos2d.h"
-class GameInit
+class GameInit : public cocos2d::Ref
 {
 public:
     GameInit();
     virtual ~GameInit();
     void beginGame();
-    void loadTipTextXML();
+    void scheduleSelectorUpdate(float);
     
-public:
+private:
+    void loadTipTextXML();
     
 };
 

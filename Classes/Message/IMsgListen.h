@@ -9,11 +9,13 @@
 #ifndef miniGame_IMsgListen_h
 #define miniGame_IMsgListen_h
 
+#include "Msg.h"
+
 class IMsgListen
 {
 public:
     virtual ~IMsgListen();
-    bool excuteMsg();
+    virtual bool excuteMsg(Msg* msg) = 0;
 protected:
     IMsgListen();
 };

@@ -1,6 +1,7 @@
 #include "HelloWorldScene.h"
 #include "cocostudio/CocoStudio.h"
 #include "ui/CocosGUI.h"
+#include "ManageMsg.h"
 
 USING_NS_CC;
 
@@ -87,6 +88,21 @@ bool HelloWorld::init()
     auto rootNode = CSLoader::createNode("MainScene.csb");
 
     addChild(rootNode);
+    
+//    test code
+//    ManageMsg::getInstance()->appendMsg(1, 0);
+//    ManageMsg::getInstance()->appendMsg(2, 0);
+//    ManageMsg::getInstance()->appendMsg(3, 0);
+//    ManageMsg::getInstance()->appendMsg(4, 0);
 
     return true;
+}
+
+
+bool HelloWorld::excuteMsg(Msg* msg)
+{
+//    test code
+//    auto a= msg->m_exData;
+//    auto b = msg->m_msgId;
+//    auto c = a + b;
 }
