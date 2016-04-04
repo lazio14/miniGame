@@ -105,4 +105,5 @@ bool HelloWorld::excuteMsg(Msg* msg)
 //    auto a= msg->m_exData;
 //    auto b = msg->m_msgId;
 //    auto c = a + b;
+    return true;
 }
