@@ -13,6 +13,9 @@
 		288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765A40DF7441C002DB57D /* CoreGraphics.framework */; };
 		2D8E4310A2E154128CD9AB6F /* libcocos2d Mac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 51554DA9A2FA70F46AF9E679 /* libcocos2d Mac.a */; };
 		3A3C14EC1CB1171B0052624D /* Msg.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A3C14EA1CB1171B0052624D /* Msg.cpp */; };
+		3A3C14F11CB21FF90052624D /* config in Resources */ = {isa = PBXBuildFile; fileRef = 3A3C14F01CB21FF90052624D /* config */; };
+		3A3C14F51CB221410052624D /* Utils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A3C14F31CB221410052624D /* Utils.cpp */; };
+		3A3C14F91CB223EA0052624D /* TipTextModel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A3C14F71CB223EA0052624D /* TipTextModel.cpp */; };
 		3A84201C1CB0A49900A199BD /* IMsgListen.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A84201A1CB0A49900A199BD /* IMsgListen.cpp */; };
 		3A8420251CB0C51E00A199BD /* MsgDispatcher.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A8420231CB0C51E00A199BD /* MsgDispatcher.cpp */; };
 		3A8420281CB0CA0200A199BD /* ManageMsg.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A8420261CB0CA0200A199BD /* ManageMsg.cpp */; };
@@ -80,6 +83,11 @@
 		3A3C14EA1CB1171B0052624D /* Msg.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Msg.cpp; path = Message/Msg.cpp; sourceTree = "<group>"; };
 		3A3C14EB1CB1171B0052624D /* Msg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Msg.h; path = Message/Msg.h; sourceTree = "<group>"; };
 		3A3C14ED1CB1172E0052624D /* CommDef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CommDef.h; path = Common/CommDef.h; sourceTree = "<group>"; };
+		3A3C14F01CB21FF90052624D /* config */ = {isa = PBXFileReference; lastKnownFileType = folder; path = config; sourceTree = "<group>"; };
+		3A3C14F31CB221410052624D /* Utils.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Utils.cpp; path = Utils/Utils.cpp; sourceTree = "<group>"; };
+		3A3C14F41CB221410052624D /* Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Utils.h; path = Utils/Utils.h; sourceTree = "<group>"; };
+		3A3C14F71CB223EA0052624D /* TipTextModel.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = TipTextModel.cpp; path = Model/TipTextModel.cpp; sourceTree = "<group>"; };
+		3A3C14F81CB223EA0052624D /* TipTextModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TipTextModel.h; path = Model/TipTextModel.h; sourceTree = "<group>"; };
 		3A8420141CAFD47600A199BD /* BaseScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = BaseScene.h; path = Common/BaseScene.h; sourceTree = "<group>"; };
 		3A8420151CAFD49500A199BD /* BaseScene.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = BaseScene.cpp; path = Common/BaseScene.cpp; sourceTree = "<group>"; };
 		3A84201A1CB0A49900A199BD /* IMsgListen.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = IMsgListen.cpp; path = Message/IMsgListen.cpp; sourceTree = "<group>"; };
@@ -253,6 +261,24 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		3A3C14F21CB220FE0052624D /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				3A3C14F31CB221410052624D /* Utils.cpp */,
+				3A3C14F41CB221410052624D /* Utils.h */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
+		3A3C14F61CB223C00052624D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3A3C14F71CB223EA0052624D /* TipTextModel.cpp */,
+				3A3C14F81CB223EA0052624D /* TipTextModel.h */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		3A8420131CAFD3F300A199BD /* Common */ = {
 			isa = PBXGroup;
 			children = (
@@ -293,6 +319,7 @@
 		46880B7519C43A67006E1F66 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				3A3C14F01CB21FF90052624D /* config */,
 				01F741B993AED8B544209AD5 /* res */,
 			);
 			name = Resources;
@@ -302,6 +329,8 @@
 		46880B8319C43A87006E1F66 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				3A3C14F61CB223C00052624D /* Model */,
+				3A3C14F21CB220FE0052624D /* Utils */,
 				3A8420191CB0A42300A199BD /* Message */,
 				3A8420131CAFD3F300A199BD /* Common */,
 				46880B8419C43A87006E1F66 /* AppDelegate.cpp */,
@@ -448,6 +477,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A3C14F11CB21FF90052624D /* config in Resources */,
 				5087E78117EB970100C73F5D /* Icon-120.png in Resources */,
 				5087E78617EB970100C73F5D /* Icon-76.png in Resources */,
 				5087E77F17EB970100C73F5D /* Default@2x.png in Resources */,
@@ -490,10 +520,12 @@
 				46880B8A19C43A87006E1F66 /* HelloWorldScene.cpp in Sources */,
 				3A8420281CB0CA0200A199BD /* ManageMsg.cpp in Sources */,
 				503AE10017EB989F00D1A890 /* AppController.mm in Sources */,
+				3A3C14F91CB223EA0052624D /* TipTextModel.cpp in Sources */,
 				3A8420251CB0C51E00A199BD /* MsgDispatcher.cpp in Sources */,
 				3A84201C1CB0A49900A199BD /* IMsgListen.cpp in Sources */,
 				503AE10217EB989F00D1A890 /* RootViewController.mm in Sources */,
 				503AE10117EB989F00D1A890 /* main.m in Sources */,
+				3A3C14F51CB221410052624D /* Utils.cpp in Sources */,
 				3AF32ACB1CAEBCAE00F0EBA4 /* GameInit.cpp in Sources */,
 				3A3C14EC1CB1171B0052624D /* Msg.cpp in Sources */,
 			);

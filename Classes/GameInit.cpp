@@ -9,6 +9,7 @@
 #include "GameInit.h"
 #include "HelloWorldScene.h"
 #include "MsgDispatcher.h"
+#include "TipTextModel.h"
 USING_NS_CC;
 
 GameInit::GameInit()
@@ -29,7 +30,7 @@ void GameInit::beginGame()
 
 void GameInit::loadTipTextXML()
 {
-    
+    TipTextModel::get().loadTipText();
 }
 
 void GameInit::scheduleSelectorUpdate(float)

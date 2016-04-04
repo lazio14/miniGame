@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plist version="1.0">
+    <tips>
+        <name id="1">tip1</name>
+        <name id="2">tip2 %d</name>
+        <name id="3">tip3</name>
+    </tips>
+</plist>
