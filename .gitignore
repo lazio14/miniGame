@@ -1,6 +1,8 @@
 # Ignore thumbnails created by windows
 Thumbs.db
 
+# Ignore files build by Cocos studio
+*.udf
 
 # Ignore files build by Visual Studio
 *.obj
