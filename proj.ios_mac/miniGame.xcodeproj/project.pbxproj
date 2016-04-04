@@ -12,7 +12,6 @@
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
 		288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765A40DF7441C002DB57D /* CoreGraphics.framework */; };
 		2D8E4310A2E154128CD9AB6F /* libcocos2d Mac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 51554DA9A2FA70F46AF9E679 /* libcocos2d Mac.a */; };
-		3A3C14E81CB105290052624D /* cocos2dVecIterator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A3C14E61CB105290052624D /* cocos2dVecIterator.cpp */; };
 		3A3C14EC1CB1171B0052624D /* Msg.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A3C14EA1CB1171B0052624D /* Msg.cpp */; };
 		3A84201C1CB0A49900A199BD /* IMsgListen.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A84201A1CB0A49900A199BD /* IMsgListen.cpp */; };
 		3A8420251CB0C51E00A199BD /* MsgDispatcher.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A8420231CB0C51E00A199BD /* MsgDispatcher.cpp */; };
@@ -76,7 +75,6 @@
 		1D6058910D05DD3D006BFB54 /* miniGame-mobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "miniGame-mobile.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		288765A40DF7441C002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		3A3C14E61CB105290052624D /* cocos2dVecIterator.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = cocos2dVecIterator.cpp; path = Common/Iterator/cocos2dVecIterator.cpp; sourceTree = "<group>"; };
 		3A3C14E71CB105290052624D /* cocos2dVecIterator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = cocos2dVecIterator.h; path = Common/Iterator/cocos2dVecIterator.h; sourceTree = "<group>"; };
 		3A3C14E91CB10B420052624D /* IIterable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = IIterable.h; path = Common/Iterator/IIterable.h; sourceTree = "<group>"; };
 		3A3C14EA1CB1171B0052624D /* Msg.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Msg.cpp; path = Message/Msg.cpp; sourceTree = "<group>"; };
@@ -258,8 +256,8 @@
 		3A8420131CAFD3F300A199BD /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				3A3C14ED1CB1172E0052624D /* CommDef.h */,
 				3A8420291CB0CE7200A199BD /* Iterator */,
+				3A3C14ED1CB1172E0052624D /* CommDef.h */,
 				3A8420141CAFD47600A199BD /* BaseScene.h */,
 				3A8420151CAFD49500A199BD /* BaseScene.cpp */,
 			);
@@ -286,7 +284,6 @@
 			isa = PBXGroup;
 			children = (
 				3A84202A1CB0CEF300A199BD /* Iterator.h */,
-				3A3C14E61CB105290052624D /* cocos2dVecIterator.cpp */,
 				3A3C14E71CB105290052624D /* cocos2dVecIterator.h */,
 				3A3C14E91CB10B420052624D /* IIterable.h */,
 			);
@@ -498,7 +495,6 @@
 				503AE10217EB989F00D1A890 /* RootViewController.mm in Sources */,
 				503AE10117EB989F00D1A890 /* main.m in Sources */,
 				3AF32ACB1CAEBCAE00F0EBA4 /* GameInit.cpp in Sources */,
-				3A3C14E81CB105290052624D /* cocos2dVecIterator.cpp in Sources */,
 				3A3C14EC1CB1171B0052624D /* Msg.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -548,7 +544,7 @@
 				);
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				USER_HEADER_SEARCH_PATHS = "$(_COCOS_HEADER_IOS_BEGIN) $(_COCOS_HEADER_IOS_END)";
+				USER_HEADER_SEARCH_PATHS = "$(_COCOS_HEADER_IOS_BEGIN) $(_COCOS_HEADER_IOS_END) /Users/lazio14/workspace/miniGame/Classes/**";
 				VALID_ARCHS = "arm64 armv7";
 			};
 			name = Debug;
@@ -583,7 +579,7 @@
 				);
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				USER_HEADER_SEARCH_PATHS = "$(_COCOS_HEADER_IOS_BEGIN) $(_COCOS_HEADER_IOS_END)";
+				USER_HEADER_SEARCH_PATHS = "$(_COCOS_HEADER_IOS_BEGIN) $(_COCOS_HEADER_IOS_END) /Users/lazio14/workspace/miniGame/Classes/**";
 				VALID_ARCHS = "arm64 armv7";
 			};
 			name = Release;

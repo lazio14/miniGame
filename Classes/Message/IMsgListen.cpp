@@ -7,16 +7,17 @@
 //
 
 #include "IMsgListen.h"
+#include "MsgDispatcher.h"
 
 
 IMsgListen::IMsgListen()
 {
-    
+    MsgDispatcher::getInstance()->addMsgListener(this);
 }
 
 IMsgListen::~IMsgListen()
 {
-    
+    MsgDispatcher::getInstance()->removeMsgListener(this);
 }
 
 bool IMsgListen::excuteMsg()

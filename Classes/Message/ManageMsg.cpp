@@ -35,3 +35,8 @@ void ManageMsg::removeAllMsg()
 {
     m_msglist.eraseObject(NULL, true);
 }
+
+Iterator<Msg*> ManageMsg::createItertor()
+{
+    new cocos2dVecIterator<Msg*>();
+}

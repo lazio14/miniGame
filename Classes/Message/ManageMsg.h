@@ -20,6 +20,7 @@ public:
     virtual ~ManageMsg();
     void appendMsg(int msgId, unsigned int exData);
     void removeAllMsg();
+    Iterator<Msg*> createItertor();
     
 private:
     ManageMsg();

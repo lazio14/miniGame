@@ -16,16 +16,16 @@ class MsgDispatcher
 {
 public:
     virtual ~MsgDispatcher();
-    static MsgDispatcher& getInstance();
+    static MsgDispatcher* getInstance();
     
-    void dispatchMsg(float delta);
+    void dispatchMsg();
     void addMsgListener(IMsgListen* listener);
-    void removeMsgListener(IMsgListen * listener);
+    void removeMsgListener(IMsgListen* listener);
         
 private:
     MsgDispatcher();
 private:
-    std::vector<IMsgListen*>* msgListenerVec;
+    std::vector<IMsgListen*> m_msgListenerVec;
 };
 
 #endif /* defined(__miniGame__MsgDispatcher__) */
