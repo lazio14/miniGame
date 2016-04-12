@@ -85,16 +85,9 @@ bool HelloWorld::init()
         return false;
     }
     
-    auto rootNode = CSLoader::createNode("MainScene.csb");
+    auto rootNode = CSLoader::createNode("MyScene.csb");
 
     addChild(rootNode);
-    
-//    test code
-//    ManageMsg::getInstance()->appendMsg(1, 0);
-//    ManageMsg::getInstance()->appendMsg(2, 0);
-//    ManageMsg::getInstance()->appendMsg(3, 0);
-//    ManageMsg::getInstance()->appendMsg(4, 0);
-
     return true;
 }
 
